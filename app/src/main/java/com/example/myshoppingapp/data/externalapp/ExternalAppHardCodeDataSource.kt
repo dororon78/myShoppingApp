@@ -20,15 +20,8 @@ class ExternalAppHardCodeDataSource @Inject internal constructor(
             marketUri = "market://details?id=com.emart.today"
         )
 
-        val notExistApp = ExternalAppInfoDto(
-            name = "김페이",
-            packageName = "com.kim.pay",
-            installable = true,
-            marketUri = "market://details?id=com.kim.pay"
-        )
-
         return Single.create {
-            it.onSuccess(listOf(samsungPay, eMartPay, notExistApp))
+            it.onSuccess(listOf(samsungPay, eMartPay))
         }
     }
 }
