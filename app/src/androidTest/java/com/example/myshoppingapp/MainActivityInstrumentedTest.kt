@@ -17,11 +17,7 @@ import org.junit.Rule
 import org.junit.Test
 import org.junit.runner.RunWith
 
-/**
- * Instrumented test, which will execute on an Android device.
- *
- * See [testing documentation](http://d.android.com/tools/testing).
- */
+// FIXME: 한 라인씩 늦게 동작함.
 @RunWith(AndroidJUnit4::class)
 class MainActivityInstrumentedTest {
 
